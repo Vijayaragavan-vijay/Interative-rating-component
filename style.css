@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--VeryDarkBlue);
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+#container {
+    width: 375px;
+    height: 375px;
+    background-color: var(--DarkBlue);
+    border-radius: 25px;
+    position: absolute;
+    padding: 25px;
+}
+
+#front {
+    display: block;
+}
+
+#container #imgcontainer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 24%);
+}
+
+#container #head {
+    position: absolute;
+    color: var(--White);
+    top: 100px;
+    font-size: 28px;
+}
+
+#container #para {
+    position: absolute;
+    color: var(--LightGrey);
+    top: 160px;
+    font-size: 15px;
+}
+
+.btn {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    color: var(--LightGrey);
+    background-color: hsl(213, 19%, 24%);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.btn:focus {
+    background-color: var(--MediumGrey);
+    color: var(--White);
+}
+
+#btn1 {
+    top: 240px;
+}
+
+#btn2 {
+    top: 240px;
+    right: 235px;
+}
+
+#btn3 {
+    top: 240px;
+    right: 165px;
+}
+
+#btn4 {
+    top: 240px;
+    right: 95px;
+}
+
+#btn5 {
+    top: 240px;
+    right: 25px;
+    /* margin-left: 200px; */
+}
+
+#submit {
+    position: absolute;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 320px;
+    height: 40px;
+    border-radius: 27px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--White);
+    text-align: center;
+    background-color: var(--Orange);
+    bottom: 30px;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+#back {
+    display: none;
+}
+
+#backimg {
+    margin-top: 28px;
+    margin-left: 70px;
+}
+
+#thankmsg {
+    color: var(--Orange);
+    text-align: center;
+    width: 190px;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 8px 10px;
+    background-color: hsl(213, 19%, 24%);
+    border-radius: 20px;
+}
+
+#thanks {
+    color: var(--White);
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#thankcontent {
+    text-align: center;
+    margin-top: 15px;
+    width: 300px;
+    color: var(--LightGrey);
+    font-size: 15px;
+}
+
+@media screen and (max-width:375px) {
+    #container {
+        width: 350px;
+    }
+    #submit {
+        width: 300px;
+    }
+    #para {
+        margin-right: 15px;
+    }
+    #btn1 {
+        left: 25px;
+    }
+    #btn2 {
+        left: 25%;
+    }
+    #btn3 {
+        left: 43%;
+    }
+    #btn4 {
+        left: 62%;
+    }
+}
