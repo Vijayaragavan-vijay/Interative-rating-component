@@ -15,6 +15,8 @@ Mobile-view:
 
 Live site: https://merry-duckanoo-14c21e.netlify.app/
 
+Solution: https://www.frontendmentor.io/solutions/interativeratingcomponent-zXLZH2jnEe
+
 ## My process
 
 ### Built with
